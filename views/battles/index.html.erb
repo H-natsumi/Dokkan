@@ -1,0 +1,6 @@
+<div class="container page_top">
+  <h2 class=battles>対戦表</h2>
+  <% @battles.each do |battle| %>
+  <p><%=battle.p1_book %>vs<%= battle.p2_book %>  <%= link_to("この対戦を見る","/battles/#{battle.id}") %></p>
+  <% end %>
+</div>

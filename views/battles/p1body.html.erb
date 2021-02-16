@@ -1,0 +1,9 @@
+<div class="container page_top">
+  <h2><%=@player1.name %></h2>
+  <h2>本のタイトル</h2>
+  <%= @battle.p1_book %>
+  <h2>紹介文</h2>
+  <%= @battle.p1_body %>
+
+  <%= link_to("戻る","/battles/#{@battle.id}") %>
+</div>

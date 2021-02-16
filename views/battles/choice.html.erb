@@ -1,0 +1,7 @@
+<div class="container page_top">
+  <h2>あなたの今までのDokkan</h2>
+  <h3>この中から1つ選択</h3>
+  <%= @posts.each do |post| %>
+  <%= link_to(post.title,"/battles/#{post.id}/choicecheck") %>
+  <% end %>
+</div>
