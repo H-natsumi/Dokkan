@@ -1,9 +1,0 @@
-<%= form_tag("/battles/create") do %>
-<div class="container page_top">
-  <h2>本のタイトル</h2>
-  <input name="book" value=<%= params[:book] %>>
-  <h2>本文</h2>
-  <textarea name="body" rows="8" cols="80"><%= params[:body] %></textarea>
-  <input type="submit" value="マッチングする">
-</div>
-<% end %>
