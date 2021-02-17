@@ -1,0 +1,11 @@
+<%= form_tag("/battles/edit") do %>
+<div class="container page_top">
+  <h2>この投稿を使用してビブリオバトルに参加しますか？</h2>
+  <h3>題名</h3>
+  <p name="book"><%= @post.bookname %></p>
+  <h3>本文</h3>
+  <p name="body"><%= @post.content %></p>
+  <input type="submit"value="はい">
+  <%= link_to("戻る","/battles/choice") %>
+</div>
+<% end %>
